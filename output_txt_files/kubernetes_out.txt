@@ -1,0 +1,8 @@
+deployment.apps/ml-housing-app created
+NAME                             READY   STATUS              RESTARTS   AGE   IP       NODE       NOMINATED NODE   READINESS GATES
+ml-housing-app-88f679fb4-8htfs   0/1     ContainerCreating   0          0s    <none>   minikube   <none>           <none>
+service/ml-housing-app exposed
+kubectl port-forward service/ml-housing-app 8080
+Forwarding from 127.0.0.1:8080 -> 80
+Forwarding from [::1]:8080 -> 80
+Handling connection for 8080
