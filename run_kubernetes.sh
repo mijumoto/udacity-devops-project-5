@@ -13,6 +13,7 @@ then
     kubectl create deployment $deploymentName --image=$dockerpath
 
     # Step 2
+    sleep 180
     kubectl get pods --output=wide
 
     # Step 3
@@ -27,10 +28,3 @@ then
 else
   echo "No command was provided."
 fi
-
-
-
-
-# Cleanup
-# kubectl delete svc $deploymentName
-# kubectl delete deployment $deploymentName
